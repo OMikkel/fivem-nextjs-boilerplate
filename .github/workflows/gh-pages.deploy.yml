@@ -1,0 +1,38 @@
+name: "Deploy to Github Pages"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    env:
+      NEXT_PUBLIC_BASE_PATH: /nextjs-omikkel-boilerplate
+
+    strategy:
+      matrix: 
+        node-version: [ 16.x ]
+
+    steps:
+      - name: Get files
+        uses: actions/checkout@latest
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@latest
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install packages
+        run: npm ci
+      - name: Build project
+        run: npm run build
+      - name: Export static files
+        run: npm run export
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@latest
+        with:
+          branch: gh-pages
+          folder: out
