@@ -1,0 +1,22 @@
+name: "Check changes for console.log and console.error"
+
+on: 
+  push:
+    branches:
+      - '**'
+
+jobs:
+  find_occurences:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Find occurences 
+        uses: omikkel/find-occurences@v1
+        with:
+          before: ${{ github.event.before }}
+          after: ${{ github.sha }}
