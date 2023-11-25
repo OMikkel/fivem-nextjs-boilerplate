@@ -1,7 +1,7 @@
 local function displayNUI(display)
     SendNUIMessage({
         type = "app/setDisplay",
-        status = display
+        data = display
     })
     SetNuiFocus(display, display)
     print("NUI: ", display)
