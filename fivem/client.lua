@@ -4,6 +4,7 @@ local function displayNUI(display)
         status = display
     })
     SetNuiFocus(display, display)
+    print("NUI: ", display)
 end
 
 

@@ -15,6 +15,7 @@ export default function EventListener({ children }: EventListenerProps) {
 
 	const onMessage = useCallback(
 		(event: MessageEvent) => {
+			console.log(event);
 			const { type, data }: { type: string; data: any } = event.data;
 			if (type && type != "ACTION" && type != "PARTIAL_STATE") {
 				console.log("Received message from NUI:", type, data);
