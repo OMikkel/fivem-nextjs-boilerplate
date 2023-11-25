@@ -13,11 +13,11 @@ Click this button to create a new repository based on this template.
 - Redux Toolkit - <https://redux-toolkit.js.org/>
 - FiveM Integration
 
-## Important
+## ⚠️ Important 
 
-> If you choose to rename the folder `fivem-nextjs-example` to something else, make sure to update the `NEXT_PUBLIC_RESOURCE_NAME` in the [`.env`](/ui/.env) file. in the `ui` folder
+If you choose to rename the folder `fivem-nextjs-example` to something else, make sure to update the `NEXT_PUBLIC_RESOURCE_NAME` in the [`.env`](/ui/.env) file. in the `ui` folder
 
-> If you are using vercel to deploy your ui, make sure to update the environment variables in the vercel dashboard
+If you are using vercel to deploy your ui, make sure to update the environment variables in the vercel dashboard
 
 ## Getting Started
 
@@ -56,7 +56,7 @@ Click this button to create a new repository based on this template.
 
 ## Usage
 
-> Join your server and press the hotkey (default: `H`) to open the menu.
+Join your server and press the hotkey (default: `H`) to open the menu.
 
 ## Learn More about NextJS
 
@@ -86,14 +86,14 @@ SendNUIMessage({
 ```js
 // state/reducers/app.ts
 const appSlice = createSlice({
-	name: "app", // sliceName
-	initialState,
-	reducers: {
-		// reducer
-		setDisplay: (state, action: PayloadAction<boolean>) => {
-			state.display = action.payload; // action.payload is the data from the FiveM client
-		},
-	},
+    name: "app", // sliceName
+    initialState,
+    reducers: {
+        // reducer
+        setDisplay: (state, action: PayloadAction<boolean>) => {
+             state.display = action.payload; // action.payload is the data from the FiveM client
+        },
+    },
 });
 ```
 
@@ -104,10 +104,10 @@ const appSlice = createSlice({
 ```js
 // app/page.tsx
 const getPlayerCount = () => {
-	// Call FiveM client
-	nuiCallback("/getPlayerCount", {}, (result: number) => {
-		setPlayerCount(result); // Set React state
-	});
+    // Call FiveM client
+    nuiCallback("/getPlayerCount", {}, (result: number) => {
+        setPlayerCount(result); // Set React state
+    });
 };
 ```
 
