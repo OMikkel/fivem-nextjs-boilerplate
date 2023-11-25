@@ -5,12 +5,14 @@ import Image from "next/image";
 import { RootState } from "@/state/store";
 import { useState } from "react";
 import { nuiCallback } from "@/lib/nuiCallback";
+import { useSearchParams } from "next/navigation";
 
 export default function Home() {
+	const searchParams = useSearchParams();
 	const display = useSelector((state: RootState) => state.app.display);
 	const [playerCount, setPlayerCount] = useState<number>(0);
 
-	if (!display) return null;
+	if (!display && !searchParams.get("preview")) return null;
 
 	const getPlayerCount = async () => {
 		nuiCallback("/getPlayerCount", {}, (result: number) => {

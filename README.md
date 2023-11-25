@@ -3,7 +3,7 @@
 ## Features
 
 - ### Typescript - <https://www.typescriptlang.org/>
-- ### NextJS - <https://nextjs.org/>
+- ### NextJS 13 - <https://nextjs.org/>
 - ### Next-themes - <https://www.npmjs.com/package/next-themes>
 - ### Tailwindcss - <https://tailwindcss.com/>
 - ### FiveM Integration

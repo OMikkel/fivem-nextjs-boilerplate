@@ -5,7 +5,7 @@ export interface appState {
 }
 
 const initialState: appState = {
-	display: true,
+	display: false,
 };
 
 const appSlice = createSlice({
