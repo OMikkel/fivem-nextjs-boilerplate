@@ -4,11 +4,11 @@ This is the ui for the nextjs fivem example
 
 Use this as a starting point for your next FiveM NUI project.
 
-## Important
+## ⚠️ Important
 
-> If you choose to rename the folder `fivem-nextjs-example` to something else, make sure to update the `NEXT_PUBLIC_RESOURCE_NAME` in the [`.env`](/ui/.env) file. in the `ui` folder
+If you choose to rename the folder `fivem-nextjs-example` to something else, make sure to update the `NEXT_PUBLIC_RESOURCE_NAME` in the [`.env`](/ui/.env) file. in the `ui` folder
 
-> If you are using vercel to deploy your ui, make sure to update the environment variables in the vercel dashboard
+If you are using vercel to deploy your ui, make sure to update the environment variables in the vercel dashboard
 
 ## Installation
 
@@ -35,7 +35,7 @@ Use this as a starting point for your next FiveM NUI project.
 
 ## Usage
 
-> Join your server and press the hotkey (default: `H`) to open the menu.
+Join your server and press the hotkey (default: `H`) to open the menu.
 
 ## Learn More
 
