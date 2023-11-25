@@ -9,6 +9,8 @@ export function middleware(req: NextRequest) {
 	if (userAgent && !userAgent.includes("CitizenFX")) {
 		return NextResponse.redirect(`${req.url}?preview=true`);
 	}
+
+	return;
 }
 
 export const config = {

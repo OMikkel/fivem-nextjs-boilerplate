@@ -16,4 +16,4 @@ server_scripts {
     "server.lua"
 }
 
-ui_page "<VERCEL LINK HERE>"
+ui_page "https://fivem-nextjs-boilerplate.vercel.app/"
