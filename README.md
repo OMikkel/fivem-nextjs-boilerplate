@@ -1,4 +1,4 @@
-# This is a NextJS boilerplate (Using it in many of my projects)
+# FiveM NUI NextJS Boilerplate - Get started quickly with the right tools
 
 ## Features
 - ### Typescript - <https://www.typescriptlang.org/>
