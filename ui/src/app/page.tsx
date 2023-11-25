@@ -14,7 +14,7 @@ export default function Home() {
 
 	if (!display && !searchParams.get("preview")) return null;
 
-	const getPlayerCount = async () => {
+	const getPlayerCount = () => {
 		nuiCallback("/getPlayerCount", {}, (result: number) => {
 			setPlayerCount(result);
 		});
