@@ -11,6 +11,7 @@ export default function Home() {
 	const searchParams = useSearchParams();
 	const display = useSelector((state: RootState) => state.app.display);
 	const [playerCount, setPlayerCount] = useState<number>(0);
+	console.log(display, searchParams.get("preview"));
 
 	if (!display && !searchParams.get("preview")) return null;
 
