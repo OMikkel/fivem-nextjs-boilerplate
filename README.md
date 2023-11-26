@@ -4,6 +4,8 @@ Click this button to create a new repository based on this template.
 
 [![Use this template](https://img.shields.io/badge/-Use%20this%20template-blue?style=for-the-badge)](https://github.com/new?template_name=fivem-nextjs-boilerplate&template_owner=OMikkel)
 
+Contact me: https://omikkel.com/discord
+
 ## Features
 
 - Typescript - <https://www.typescriptlang.org/>
